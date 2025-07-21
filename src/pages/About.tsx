@@ -31,19 +31,20 @@ const About = () => {
       linkedin: 'https://in.linkedin.com/in/mohit-rathi-a2745a290', 
     },
     {
-      name: 'Ashish Mangale',
-      role: 'Mentor',
-      image: `${ashis}?&w=400`,
-      description: 'Student mentor Technical Head.',
+      name: 'siddhika Gherade',
+      role: 'Technical Co-Head',
+      image: `${girl}?&w=400`,
+      description: 'Student mentor Technical Co-Head.',
       linkedin: 'https://www.linkedin.com/in/', 
     },
     {
-      name: 'siddhika Gherade',
+      name: 'Ashish Mangale',
       role: 'Mentor',
-      image: `${girl}?&w=400`,
-      description: 'Student mentor Technical Head.',
+      image: `${ashis}?&w=400`,
+      description: 'Student mentor.',
       linkedin: 'https://www.linkedin.com/in/', 
     },
+
   ];
 
   return (

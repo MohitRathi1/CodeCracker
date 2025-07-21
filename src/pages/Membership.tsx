@@ -50,20 +50,20 @@ const Membership = () => {
               <h2 className="text-2xl font-semibold mb-4" style={{ color: '#aedce2' }}>
                 {section.year}
               </h2>
-              <div className="overflow-x-auto rounded-lg shadow-lg"> {/* Added rounded corners and shadow */}
-                <table className="min-w-full table-auto border border-gray-700 text-sm md:text-base rounded-lg overflow-hidden"> {/* Added rounded-lg overflow-hidden */}
+              <div className="overflow-x-auto"> {/* Reverted: Removed rounded-lg shadow-lg */}
+                <table className="min-w-full table-auto border border-gray-700 text-sm md:text-base"> {/* Reverted: Removed rounded-lg overflow-hidden */}
                   <thead style={{ backgroundColor: '#222' }}>
                     <tr>
-                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90] font-medium">Week</th> {/* Added font-medium */}
-                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90] font-medium">Topic</th> {/* Added font-medium */}
-                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90] font-medium">Details</th> {/* Added font-medium */}
+                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90]">Week</th> {/* Reverted: Removed font-medium */}
+                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90]">Topic</th> {/* Reverted: Removed font-medium */}
+                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90]">Details</th> {/* Reverted: Removed font-medium */}
                     </tr>
                   </thead>
                   <tbody>
                     {section.weeks.map((week, i) => (
-                      <tr key={i} className="hover:bg-gray-800 transition duration-300 ease-in-out"> {/* Added transition */}
+                      <tr key={i} className="hover:bg-gray-800 transition"> {/* Reverted: Removed duration-300 ease-in-out */}
                         <td className="px-4 py-3 border-b border-gray-700 text-gray-300">{week.week}</td>
-                        <td className="px-4 py-3 border-b border-700 text-gray-300">{week.topic}</td>
+                        <td className="px-4 py-3 border-b border-gray-700 text-gray-300">{week.topic}</td>
                         <td className="px-4 py-3 border-b border-gray-700 text-gray-400">{week.details}</td>
                       </tr>
                     ))}
