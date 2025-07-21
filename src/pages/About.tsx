@@ -25,10 +25,17 @@ const About = () => {
     },
     {
       name: 'Mohit Rathi',
-      role: 'Technical Lead',
+      role: 'Secretary',
       image: `${mohit}?&w=400`,
       description: 'Web Developer frontend using Tech stack React and laravel.',
       linkedin: 'https://in.linkedin.com/in/mohit-rathi-a2745a290', 
+    },
+       {
+      name: 'Ashish Mangale',
+      role: 'Technical Head',
+      image: `${ashis}?&w=400`,
+      description: 'Student mentor Technical Head.',
+      linkedin: 'https://www.linkedin.com/in/', 
     },
     {
       name: 'siddhika Gherade',
@@ -37,13 +44,7 @@ const About = () => {
       description: 'Student mentor Technical Co-Head.',
       linkedin: 'https://www.linkedin.com/in/', 
     },
-    {
-      name: 'Ashish Mangale',
-      role: 'Mentor',
-      image: `${ashis}?&w=400`,
-      description: 'Student mentor.',
-      linkedin: 'https://www.linkedin.com/in/', 
-    },
+ 
 
   ];
 
