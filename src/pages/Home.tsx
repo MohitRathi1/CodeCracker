@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import bgImage from '/assets/bg.jpg'; // Adjust path if needed
-import arrow from '/assets/arrow.png'
+import arrow from '/assets/arrow.png';
 
 const Home = () => {
   return (
@@ -16,21 +16,13 @@ const Home = () => {
       <div className="absolute inset-0 bg-black bg-opacity-60 z-0" />
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-              <Link to="/" className="flex items-center space-x-2">
-                    <img
-                      src={arrow}
-                      alt="arrow"
-  className="mx-auto"
-  style={{ height: '150px' }} 
-                      />
-                  
-                  </Link>
-{/* <img
+        
+<img
   src={arrow}
   alt="Arrow"
   className="mx-auto"
   style={{ height: '150px' }} // Adjust as needed
-/> */}
+/>
 
         <motion.h1
           initial={{ y: 20, opacity: 0 }}
