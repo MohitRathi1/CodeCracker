@@ -31,14 +31,14 @@ const About = () => {
       linkedin: 'https://in.linkedin.com/in/mohit-rathi-a2745a290', 
     },
     {
-      name: 'Ashis',
+      name: 'Ashish Mangale',
       role: 'Mentor',
       image: `${ashis}?&w=400`,
       description: 'Student mentor Technical Head.',
       linkedin: 'https://www.linkedin.com/in/', 
     },
     {
-      name: 'Sidhika Patil',
+      name: 'siddhika Gherade',
       role: 'Mentor',
       image: `${girl}?&w=400`,
       description: 'Student mentor Technical Head.',
