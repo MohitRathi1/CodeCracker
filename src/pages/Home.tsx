@@ -16,7 +16,7 @@ const Home = () => {
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
 <img
-  src="../assets/arrow.png"
+  src="https://ibb.co/PZZLdwW3"
   alt="Arrow"
   className="mx-auto"
   style={{ height: '150px' }} // Adjust as needed
