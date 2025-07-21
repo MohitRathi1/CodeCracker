@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import bgImage from '/assets/bg.jpg'; // Adjust path if needed
+import arrow from '/assets/arrow.png'
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
 <img
-  src="https://i.ibb.co/KjjPJFsR/arrow.png"
+  src={arrow}
   alt="Arrow"
   className="mx-auto"
   style={{ height: '150px' }} // Adjust as needed
