@@ -54,7 +54,7 @@ const Home = () => {
         >
           {/* Register Button */}
           <motion.a
-            href="/register"
+            href="https://forms.gle/C9J1mtmeaDVTyUjV6 "
             className="px-6 py-3 font-bold rounded-md flex items-center justify-center text-black"
             style={{
               backgroundColor: 'rgba(174, 220, 226, 1)',
