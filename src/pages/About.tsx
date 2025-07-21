@@ -1,41 +1,46 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Users, Target, BookOpen, Linkedin } from 'lucide-react'; 
+import manav from '/assets/manav1.jpg';
+import mohit from '/assets/mohit.jpg';
+import harshal from '/assets/harshal.jpg';
+import ashis from '/assets/ashis.jpg';
+import girl from '/assets/girl.jpg';
 
 const About = () => {
   const teamMembers = [
     {
       name: 'Manav Patni',
       role: 'President',
-      image: '../assets/manav1.jpg?&w=400',
+      image: `${manav}?&w=400`,
       description: 'Full-stack developer with a passion for teaching and community building.',
       linkedin: 'https://in.linkedin.com/in/manavpatni',
     },
     {
       name: 'Harshal Suryavanshi',
       role: 'Vice President',
-      image: '../assets/harshal.jpg?&w=400',
+      image: `${harshal}?&w=400`,
       description: 'AI enthusiast and competitive programmer with multiple hackathon wins.',
       linkedin: 'https://in.linkedin.com/in/harshal-suryavanshi-developer', 
     },
     {
       name: 'Mohit Rathi',
       role: 'Technical Lead',
-      image: '/assets/mohit.jpg?&w=400',
+      image: `${mohit}?&w=400`,
       description: 'Web Developer frontend using Tech stack React and laravel.',
       linkedin: 'https://in.linkedin.com/in/mohit-rathi-a2745a290', 
     },
     {
       name: 'Ashis',
       role: 'Mentor',
-      image: '../assets/ashis.jpg?&w=400',
+      image: `${ashis}?&w=400`,
       description: 'Student mentor Technical Head.',
       linkedin: 'https://www.linkedin.com/in/', 
     },
     {
       name: 'Sidhika Patil',
       role: 'Mentor',
-      image: '../assets/girl.jpg?&w=400',
+      image: `${girl}?&w=400`,
       description: 'Student mentor Technical Head.',
       linkedin: 'https://www.linkedin.com/in/', 
     },
