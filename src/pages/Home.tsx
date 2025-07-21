@@ -17,12 +17,12 @@ const Home = () => {
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         
-<img
+{/* <img
   src={arrow}
   alt="Arrow"
   className="mx-auto"
   style={{ height: '150px' }} // Adjust as needed
-/>
+/> */}
 
         <motion.h1
           initial={{ y: 20, opacity: 0 }}
