@@ -3,14 +3,20 @@ import { motion } from 'framer-motion';
 
 const syllabusData = [
   {
-    year: 'Python Programming',
+    year: 'AI/ML',
     weeks: [
-      { week: 'Week 1', topic: 'Orientation & Python Environment Setup', details: 'Installing Python, VS Code, IDE usage' },
-      { week: 'Week 2–4', topic: 'Core Python Programming', details: 'Variables, Data Types, Loops, Functions, Data Structures' },
-      { week: 'Week 5', topic: 'Mini Project #1', details: 'CLI-based application' },
-      { week: 'Week 6–8', topic: 'Intermediate Python', details: 'File Handling, OOP, Libraries: math, datetime, etc.' },
-      { week: 'Week 9–12', topic: 'Final Project', details: 'Team-based project (Student Data Manager, Expense Tracker)' },
-      { week: 'Week 12', topic: 'Project Showcase & Feedback', details: 'Presentations, Mentor/Faculty feedback' },
+      { week: 'Week 1', topic: 'Python & AI Basics', details: 'Python revision - AI overview - Supervised vs Unsupervised learning' },
+      { week: 'Week 2', topic: 'Numpy & Pandas', details: 'Why use Numpy/Pandas? - Real-world datasets - Hands-on data operations' },
+      { week: 'Week 3', topic: 'Data Preprocessing', details: 'Data cleaning - Feature extraction - Train-test split' },
+      { week: 'Week 4', topic: 'NLP Basics', details: 'NLP concepts (tokens, stopwords) - Text to vectors - NLP pipeline' },
+      { week: 'Week 5', topic: 'Bag of Words & TF-IDF', details: 'BOW, TF-IDF vectorization - Application in text classification' },
+      { week: 'Week 6', topic: 'ML Algorithms', details: 'Classification & Regression - Linear/Logistic Regression, Decision Trees' },
+      { week: 'Week 7', topic: 'NLP Projects & Model Training', details: 'Sentiment analysis - Dataset-based project kickoff' },
+      { week: 'Week 8', topic: 'LLMs & Transformers Intro', details: 'LLM architecture - How LLMs work - Use cases (chatbots, Q&A)' },
+      { week: 'Week 9', topic: 'LLM Applications', details: 'Prompt engineering - Using APIs (OpenAI/HuggingFace) - Mini LLM project' },
+      { week: 'Week 10', topic: 'NLP + LLM Project Implementation', details: 'Complete text classification / chatbot project - Intermediate results' },
+      { week: 'Week 11', topic: 'Project Refinement & Testing', details: 'Model evaluation - Result analysis - Report preparation' },
+      { week: 'Week 12', topic: 'Major Project Presentation & Wrap-Up', details: 'Final presentation - Peer & mentor feedback - Certification, Summary' },
     ],
   },
   {
@@ -28,7 +34,7 @@ const syllabusData = [
 
 const Membership = () => {
   return (
-    <div className="pt-24 pb-16 px-4 bg-black text-white min-h-screen">
+    <div className="pt-24 pb-16 px-4 bg-black text-white min-h-screen font-sans"> {/* Added font-sans */}
       <div className="max-w-7xl mx-auto">
         <motion.section
           initial={{ opacity: 0, y: 20 }}
@@ -44,20 +50,20 @@ const Membership = () => {
               <h2 className="text-2xl font-semibold mb-4" style={{ color: '#aedce2' }}>
                 {section.year}
               </h2>
-              <div className="overflow-x-auto">
-                <table className="min-w-full table-auto border border-gray-700 text-sm md:text-base">
+              <div className="overflow-x-auto rounded-lg shadow-lg"> {/* Added rounded corners and shadow */}
+                <table className="min-w-full table-auto border border-gray-700 text-sm md:text-base rounded-lg overflow-hidden"> {/* Added rounded-lg overflow-hidden */}
                   <thead style={{ backgroundColor: '#222' }}>
                     <tr>
-                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90]">Week</th>
-                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90]">Topic</th>
-                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90]">Details</th>
+                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90] font-medium">Week</th> {/* Added font-medium */}
+                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90] font-medium">Topic</th> {/* Added font-medium */}
+                      <th className="text-left px-4 py-3 border-b border-gray-700 text-[#54ae90] font-medium">Details</th> {/* Added font-medium */}
                     </tr>
                   </thead>
                   <tbody>
                     {section.weeks.map((week, i) => (
-                      <tr key={i} className="hover:bg-gray-800 transition">
+                      <tr key={i} className="hover:bg-gray-800 transition duration-300 ease-in-out"> {/* Added transition */}
                         <td className="px-4 py-3 border-b border-gray-700 text-gray-300">{week.week}</td>
-                        <td className="px-4 py-3 border-b border-gray-700 text-gray-300">{week.topic}</td>
+                        <td className="px-4 py-3 border-b border-700 text-gray-300">{week.topic}</td>
                         <td className="px-4 py-3 border-b border-gray-700 text-gray-400">{week.details}</td>
                       </tr>
                     ))}
