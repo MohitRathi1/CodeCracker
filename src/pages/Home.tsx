@@ -53,7 +53,7 @@ const Home = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           {/* Register Button */}
-          <motion.a
+          {/* <motion.a
             href="https://forms.gle/C9J1mtmeaDVTyUjV6 "
             className="px-6 py-3 font-bold rounded-md flex items-center justify-center text-black"
             style={{
@@ -64,7 +64,7 @@ const Home = () => {
           >
             REGISTER
             <ChevronRight className="ml-2 h-5 w-5" />
-          </motion.a>
+          </motion.a> */}
 
           {/* Contact Us Button */}
           <motion.a

@@ -38,7 +38,7 @@ const About = () => {
       linkedin: 'https://www.linkedin.com/in/', 
     },
     {
-      name: 'siddhika Gherade',
+      name: 'Siddhika Gherade',
       role: 'Technical Co-Head',
       image: `${girl}?&w=400`,
       description: 'Student mentor Technical Co-Head.',

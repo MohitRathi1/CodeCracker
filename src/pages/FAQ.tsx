@@ -5,13 +5,26 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const primaryColor = '#54ae90'; 
-  const secondaryColor = '#aedce2'; 
+  const primaryColor = '#54ae90';
+  const secondaryColor = '#aedce2';
 
   const faqs = [
     {
-      question: 'How can I become a member?',
-      answer: 'To become a member, simply fill out the registration form on our Membership page. Once submitted, we\'ll review your application and get back to you within 2-3 business days.',
+      question: 'How can I Join a Code Crakers?',
+      answer: (
+        <>
+          For becoming part of Code Crackers Club, fill out our Registration form.{' '}
+          <a
+            href="/registration" // Replace with your actual registration page path
+            className="inline-block px-4 py-2 mt-2 rounded-md font-semibold transition-colors duration-300"
+            style={{ backgroundColor: primaryColor, color: 'white' }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#4a9c7e'} // Slightly darker shade on hover
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = primaryColor}
+          >
+            Register Now! 🚀
+          </a>
+        </>
+      ),
     },
     {
       question: 'What are the membership benefits?',
@@ -65,20 +78,20 @@ const FAQ = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               className="rounded-lg overflow-hidden shadow-lg"
-              style={{ backgroundColor: 'rgba(174, 220, 226, 0.1)' }} 
+              style={{ backgroundColor: 'rgba(174, 220, 226, 0.1)' }}
             >
               <button
                 className="w-full px-6 py-4 flex items-center justify-between transition-colors duration-300"
-                style={{ backgroundColor: 'rgba(174, 220, 226, 0.1)', }}
+                style={{ backgroundColor: 'rgba(174, 220, 226, 0.1)' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(174, 220, 226, 0.15)'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(174, 220, 226, 0.1)'}
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 <span className="text-lg font-medium text-left text-white">{faq.question}</span>
                 {openIndex === index ? (
-                  <ChevronUp className="h-5 w-5" style={{ color: primaryColor }} /> /* Icon color to primary */
+                  <ChevronUp className="h-5 w-5" style={{ color: primaryColor }} />
                 ) : (
-                  <ChevronDown className="h-5 w-5" style={{ color: primaryColor }} /> /* Icon color to primary */
+                  <ChevronDown className="h-5 w-5" style={{ color: primaryColor }} />
                 )}
               </button>
               <motion.div

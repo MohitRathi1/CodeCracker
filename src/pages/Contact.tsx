@@ -13,7 +13,7 @@ const App = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const mailtoLink = `mailto:mohitrathi@gmail.com?subject=${encodeURIComponent(`Inquiry from ${name} for message ${message}`)}&body=${encodeURIComponent(`Hello Code Cracker Club,\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+    const mailtoLink = `23sc121481133@sanjayghodawatuniversity.ac.in?subject=${encodeURIComponent(`Inquiry from :${name} for message :${message}`)}&body=${encodeURIComponent(`Hello Code Cracker Club,\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
 
     window.location.href = mailtoLink;
 
@@ -108,20 +108,21 @@ const App = () => {
               >
                 <div className="flex items-center space-x-4 mb-4">
                   <Mail className="h-6 w-6" style={{ color: primaryColor }} />
-                  <span>contact@codecrackersclub.com</span>
+                  <span>23sc121481133@sanjayghodawatuniversity.ac.in</span>
                 </div>
                 <div className="flex items-center space-x-4 mb-4">
                   <Phone className="h-6 w-6" style={{ color: primaryColor }} />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+91 8169099263</span>
                 </div>
                 <div className="flex items-center space-x-4 mb-4">
+                  <Phone className="h-6 w-6" style={{ color: primaryColor }} />
+                  <span>+91 9405623203</span>
+                </div>
+                {/* <div className="flex items-center space-x-4 mb-4">
                   <MapPin className="h-6 w-6" style={{ color: primaryColor }} />
                   <span>123 Tech Street, Innovation City, ST 12345</span>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <Mail className="h-6 w-6" style={{ color: primaryColor }} />
-                  <span>mohitrathi@gmail.com</span>
-                </div>
+                </div> */}
+               
               </div>
             </motion.div>
           </div>

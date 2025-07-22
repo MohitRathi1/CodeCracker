@@ -22,7 +22,7 @@ const syllabusData = [
   {
     year: 'Web Development Track',
     weeks: [
-      { week: 'Week 1–2', topic: 'JavaScript & DOM Manipulation', details: 'ES6+, Async, Fetch API, DOM Operations' },
+      { week: 'Week 1–2', topic: 'HTML, CSS, JavaScript & DOM Manipulation', details: 'HTML,CSS revision & ES6+, Async, Fetch API, DOM Operations' },
       { week: 'Week 3–5', topic: 'React.js Development', details: 'Components, Props, State, Hooks, Routing' },
       { week: 'Week 6', topic: 'Mini Project #1', details: 'Hands-on mini app using React' },
       { week: 'Week 7–10', topic: 'Backend Development', details: 'Node.js, Express.js, REST APIs, MongoDB/MySQL' },
