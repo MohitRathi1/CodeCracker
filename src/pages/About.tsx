@@ -6,6 +6,8 @@ import mohit from '/assets/mohit.jpg';
 import harshal from '/assets/harshal.jpg';
 import ashis from '/assets/ashis.jpg';
 import girl from '/assets/girl.jpg';
+import manmohan from '/assets/manmohan.jpg';
+import yash from '/assets/yash.jpg';
 
 const About = () => {
   const teamMembers = [
@@ -35,7 +37,7 @@ const About = () => {
       role: 'Technical Head',
       image: `${ashis}?&w=400`,
       description: 'Student mentor Technical Head.',
-      linkedin: 'https://www.linkedin.com/in/', 
+      linkedin: 'https://in.linkedin.com/in/ashish-mangale-091642361', 
     },
     {
       name: 'Siddhika Gherade',
@@ -43,6 +45,20 @@ const About = () => {
       image: `${girl}?&w=400`,
       description: 'Student mentor Technical Co-Head.',
       linkedin: 'https://www.linkedin.com/in/', 
+    },
+    {
+      name: 'Manmohan Zhanwar',
+      role: 'Mentor',
+      image: `${manmohan}?&w=400`,
+      description: 'Student mentor Skills lies in MERN stack.',
+      linkedin: 'https://in.linkedin.com/in/developer-manmohan', 
+    },
+    {
+      name: 'Yash Rani',
+      role: 'Mentor',
+      image: `${yash}?&w=400`,
+      description: 'Student mentor Skills lies in MERN stack.',
+      linkedin: 'https://in.linkedin.com/in/yash-rane-devop', 
     },
  
 
