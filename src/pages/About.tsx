@@ -10,8 +10,6 @@ import manmohan from '/assets/manmohan.jpg';
 import yash from '/assets/yash.jpg';
 import srujal from '/assets/srujal.jpg';
 
-
-
 const About = () => {
   const teamMembers = [
     {
