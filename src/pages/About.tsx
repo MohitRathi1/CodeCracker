@@ -8,6 +8,7 @@ import ashis from '/assets/ashis.jpg';
 import girl from '/assets/girl.jpg';
 import manmohan from '/assets/manmohan.jpg';
 import yash from '/assets/yash.jpg';
+import srujal from '/assets/srujal.jpg';
 
 const About = () => {
   const teamMembers = [
@@ -60,7 +61,14 @@ const About = () => {
       description: 'Student mentor Skills lies in MERN stack.',
       linkedin: 'https://in.linkedin.com/in/yash-rane-devop', 
     },
- 
+
+    {
+      name: 'Srujal Yandagoudar',
+      role: 'Mentor',
+      image: `${srujal}?&w=400`,
+      description: 'Student mentor Skills lies in MERN stack.',
+      linkedin: 'https://in.linkedin.com/in/srujal-yandagoudar', 
+    },
 
   ];
 
